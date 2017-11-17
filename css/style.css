@@ -1,0 +1,101 @@
+/* 
+* @Author: anchen
+* @Date:   2017-05-25 10:36:21
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-05-26 14:52:21
+*/
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+/* 2.针对性处理 */
+ol,ul{ list-style:none;}            /*清除列表默认风格*/
+textarea{ resize:none;}             /*文本域禁止拖拽*/
+img{ border:none; display:block;}   /*清除图片链接在ie下默认边框，图片底部默认的空白*/
+/* 3.设置全局样式 */
+body{ color:#3c3c3c; font-size:12px; font-family:"宋体";}
+a{color:#3c3c3c; text-decoration:none;}
+a:hover{color:#f40;}
+.section{ height: 650px;background:url(../img/002.jpg) no-repeat top center;padding-left: 10px;padding-right: 10px;padding-top:10px;}
+.page>*{transition:all 1s;}
+
+.page.out .bd_top{transform:translateX(-1000px);}
+.page.out .bd_foot{transform:translateX(-1000px);}
+.page.out .heade_left{transform:translateX(-1000px) rotate(360deg); }
+.page.out .heade_cen{  transform:translateY(-1000px); opacity:0;}
+.page.out .heade_rig{transform:translateX(1000px) rotate(360deg);}
+.page.out .foot_lft{transform:translateY(-1000px);}
+.page.out .foot_cen{transform:translateY(-1000px);}
+.page.out .foot_rig{transform:translateY(-1000px);}
+
+/* 首页 */
+.heade{ height: 40px;  }
+.heade_left{
+    background:url(../img/03.png) no-repeat left center;
+    width:400px;
+    height: 40px;
+    float:left;
+    position: absolute;
+    left:10px;
+
+}
+.heade_cen{ background:url(../img/02.png) no-repeat center center;
+    width:400px;
+    height: 40px;
+    position: absolute;
+    left:500px; 
+}
+.heade_cen p{
+    text-align: center;
+    line-height: 38px;
+    color:#fff;
+    font-size: 16px;
+    font-family: old;
+}
+
+    .heade_rig{ background:url(../img/01.png) no-repeat right center;
+    width:400px;
+    height: 40px;
+    position: absolute;
+   right: 10px;
+   
+}
+
+  .bd-lft{
+        zoom:1;
+        overflow:hidden;
+        padding-left:310px;
+
+    }
+    .bd-lft .aside {
+        float:left;
+        width:300px;
+        margin-left:-100%; 
+        position:relative;
+        left:-310px;
+    }
+ .bd-lft .main {
+        float:left;
+        width:100%;
+    }
+    .cen_main{
+        width:600px;
+        height: 400px;
+        background:url(../img/05.jpg) no-repeat center center;
+        float:left;
+    }
+    .cen_fot{
+        height: 400px;
+
+        width:300px;
+        float:right;
+        margin-right: 20px;
+    }
+
+      .bd_top,.bd_foot{
+        height: 200px;
+        width:300px;
+        background:url(../img/004.png) no-repeat center center;
+    }
+    .footer{height: 200px;width:100%;}
+    .foot_cen{width:500px;height:200px;float:left;margin-left:100px;background:url(../img/06.png) no-repeat;}
+    .foot_lft,.foot_rig{width:300px;height:200px;float:left;background:url(../img/05.png) no-repeat;}
+    .foot_rig{float:right;}
